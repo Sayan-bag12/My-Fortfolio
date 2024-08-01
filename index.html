@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>        
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">MyFolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="sayan.jpg" alt="Sayan kr. Bag profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sayan Kumar Bag</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Sayan_resume.pdf')"          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sayan-bag-28b6022b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+            />
+            <a href="//www.linkedin.com/in/sayan-bag-28b6022b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">Linkdin</a>
+            
+        
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Sayan-bag12'"
+          />
+          <a href="https://github.com/Sayan-bag12">Github</a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Not good experience now, but i'm learning for  <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> <a href="https://www.google.com/search?q=bachelor+of+computer+application&sca_esv=600dabd129a0d515&sca_upv=1&rlz=1C1ONGR_enIN1096IN1096&sxsrf=ADLYWII9N7_RbvbwQE5TKhK78-IryUt1kQ%3A1722330535196&ei=p62oZoTWC-_NseMP5ozNoQg&oq=bache&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWJhY2hlKgIIAjIOEAAYgAQYkQIYsQMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigVIvlFQ9w5YjTdwAXgBkAEAmAH7AaABzhOqAQUwLjkuNLgBA8gBAPgBAZgCDKACjxHCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICExAuGIAEGLADGNEDGEMYxwEYigXCAgoQIxiABBgnGIoFwgIKEAAYgAQYFBiHAsICBRAAGIAEwgIIEAAYgAQYsQPCAg0QABiABBixAxgUGIcCwgILEAAYgAQYkgMYigXCAhMQLhiABBixAxjRAxhDGMcBGIoFwgIOEC4YgAQYsQMYgwEYigXCAgoQLhiABBhDGIoFwgILEAAYgAQYsQMYgwHCAhAQLhiABBjRAxhDGMcBGIoFwgILEAAYgAQYkQIYigXCAg0QLhiABBixAxhDGIoFmAMAiAYBkAYKkgcFMS43LjSgB5ho&sclient=gws-wiz-serp"><font color="orange">Bachelors Degree Ongoing</font></a></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I am Sayan and I work as a web developer. I am a software engineer who loves to create websites as well as apps for people. I think that people should look at the bigger picture when they are building something. I love to work in groups where everyone can voice their opinions and ideas.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Contact'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.w3schools.com/html/html_intro.asp">Html</a></h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+              
+          
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Additionally</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.javatpoint.com/c-programming-language-tutorial">C Language</a></h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://www.javatpoint.com/java-tutorial">Java</a></h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python Language</a></h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+   
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                <div>
+                  <h3><a href="https://www.javatpoint.com/sql-tutorial">My Sql</a></h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div><h1> <p align="center"><font size="15", color="black">Project</font> </p></h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Document1.pdf"
+                alt="Project None"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project None</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          
+    <section id="Contact">
+      <font size=25, color="black">
+        <b>
+        <p align="center">
+      Contact
+      </font>
+    
+    </p>
+    <br>
+    <font size="5">
+      
+    </br>
+      <p align="center"> Email I'd - <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmZTdFdTGDGzFqmssBQHCJccTtzGdlzhstFgZCMTZSVWcXRGXxqbNmBSLnxHSkkJHcKwL">sayanbag6840@gmail.com</a></p>
+    </font>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <p>Copyright &#169; 2024 Sayan Kumar Bag. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </section>
+  </br>
+  </body>
+</html>
+    
+ 
+  
+      
+
+      
+    
+ 
